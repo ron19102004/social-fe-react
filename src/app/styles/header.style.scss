@@ -1,0 +1,45 @@
+@import "../index.scss";
+.chakra-modal__content-container.css-wl0d9u,
+.chakra-modal__content-container.css-1u2cvaz{
+  backdrop-filter: blur(10px);
+}
+.link-mobile{
+  @apply text-gray-300 p-2 flex flex-col justify-center items-center;
+  svg {
+    @apply w-6 h-6 ;
+  }
+}
+.link-mobile-active{
+  @apply text-color4 p-2 bg-color6 flex flex-col justify-center items-center;
+  svg {
+    @apply w-6 h-6 ;
+  }
+}
+.link {
+  @apply text-gray-300 py-3 px-7 m-1;
+  svg {
+    @apply w-6 h-6;
+  }
+  &:hover{
+    @apply bg-color6 rounded-xl;
+  }
+}
+.link-active {
+  @apply text-color4 relative py-3 px-7 m-1;
+  &:hover{
+    @apply bg-color6 rounded-xl;
+  }
+  svg {
+    @apply w-6 h-6;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    border-radius: 10px;
+    background-color: $color4;
+  }
+}
